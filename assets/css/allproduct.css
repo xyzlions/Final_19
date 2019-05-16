@@ -1,7 +1,7 @@
 /*模糊背景圖*/
 body
 {
-background-image: url(info_bg.jpg);
+background-image: url(assets/img/info_bg.jpg);
 background-repeat: fixed;
 background-size: 100% 100%;
 opacity: 0.8;
