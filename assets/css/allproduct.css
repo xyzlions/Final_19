@@ -1,0 +1,42 @@
+/*模糊背景圖*/
+body
+{
+background-image: url(info_bg.jpg);
+background-repeat: fixed;
+background-size: 100% 100%;
+opacity: 0.8;
+text-align: center;
+}
+/*商品總覽*/
+div.type
+{
+position: relative;
+margin: -1% 5% 0% 5%;/*上 右 下 左*/
+background-color:#F7DBAC;
+text-align: center;
+border: 1pt #5d533d solid;
+}
+/*商品種類選擇*/
+div.product_type
+{
+	background-color: #303030;
+	width: auto;
+}
+/*單類商品區塊*/
+div.one_product
+{
+padding:0% 0% 0% 0%;
+background-color: #765929;
+margin: 0% 10%;
+border-radius: 2%;
+width:auto;
+}
+/*單個商品圖片*/
+img.product_pic
+{
+margin: 2%;
+width: 10%;
+height: 10%;
+border-radius: 15%;
+border:5pt  #ffffff solid;
+}
