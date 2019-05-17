@@ -1,0 +1,34 @@
+.fixed
+  {
+    position: fixed;
+    z-index: 1;
+  }
+  .rounded-circle{
+	width:80px;
+	height:80px;
+}
+
+#navbarToggleExternalContent{
+  transform: translateX(-100%);
+  transition: transform .35s ease;
+  display: block;
+  height: 100%;
+  min-height: 100%;
+}
+#navbarToggleExternalContent.show{
+  transform: translateX(0%);
+}
+.navbar.navbar-dark.bg-dark{
+    background-size:cover;
+	background-repeat:no-repeat;
+	min-width: 100vw;
+}
+.header-class{
+	min-height:100vh;
+	background-image:url(images/banner.jpg);
+	background-size:cover;
+	background-position:center center;
+}
+.navbar-dark.bg-dark{
+	background-color:#000000;
+}
