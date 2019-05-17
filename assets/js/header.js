@@ -5,8 +5,8 @@ document.write("<meta name=\"viewport\" content=\"width=device-width, initial-sc
 document.write("<meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">" );    
 document.write("<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\" integrity=\"sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm\" crossorigin=\"anonymous\">" );    
 document.write("<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css\" integrity=\"sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS\" crossorigin=\"anonymous\">" );    
-document.write("<script src=\"assets/js/jquery-3.4.1.min.js\"><\/script>");    
-document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"assets/css/header.css\">");
+document.write("<script src=\".../js/jquery-3.4.1.min.js\"><\/script>");    
+document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\".../css/header.css\">");
 document.write("<title>header</title>");  
 document.write("<script>");  
 document.write("const $menu = $('#navbarToggleExternalContent');");  
@@ -24,14 +24,14 @@ document.write("<nav class=\"navbar navbar-dark bg-dark \" >");
 document.write("<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggleExternalContent\">");        
 document.write("<span class=\"navbar-toggler-icon\"></span>");        
 document.write("</button>");        
-document.write("<img src=\"assets/img/LOGO1.png\" alt=\"blossom\" width=\"200px\" height=\"80px\" align=\"right\">");        
-document.write("<h3 style=\"text-align:right; color:#FFFFFF; \"><img src=\"assets/img/blossom.png\" alt=\"\" style=\"width: 50px; margin-right:20px;\">瀏覽人數 : 10000<img src=\"assets/img/blossom.png\" alt=\"\" style=\"width: 50px; margin-left:20px;\">");        
+document.write("<img src=\".../img/LOGO1.png\" alt=\"blossom\" width=\"200px\" height=\"80px\" align=\"right\">");        
+document.write("<h3 style=\"text-align:right; color:#FFFFFF; \"><img src=\".../img/blossom.png\" alt=\"\" style=\"width: 50px; margin-right:20px;\">瀏覽人數 : 10000<img src=\".../img/blossom.png\" alt=\"\" style=\"width: 50px; margin-left:20px;\">");        
 document.write("</h3>");        
 document.write("</nav>");      
 document.write("<div class=\"bg-dark collapse width position-fixed \" id=\"navbarToggleExternalContent\">");      
 document.write("<!-- https://stackoverflow.com/a/10055302/9265131 -->");        
 document.write("<div class=\"bg-dark py-4 \" >");        
-document.write("<center><img src=\"assets/img/logo2.jpg\" alt=\"logo2\" class=\"rounded-circle center-block \"></center><br>");          
+document.write("<center><img src=\".../img/logo2.jpg\" alt=\"logo2\" class=\"rounded-circle center-block \"></center><br>");          
 document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >首頁</h4></a>");          
 document.write("<hr color=\"white\" width=\"100px\" size=\"20\">");          
 document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >商品選購</h4></a>");          
@@ -47,3 +47,4 @@ document.write("<script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\"
 document.write("<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js\" integrity=\"sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut\" crossorigin=\"anonymous\"><\/script>");  
 
  document.write("<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js\" integrity=\"sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k\" crossorigin=\"anonymous\"><\/script>"); 
+document.write("</script>");
