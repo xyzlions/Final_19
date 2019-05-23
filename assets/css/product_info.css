@@ -1,0 +1,135 @@
+body
+{
+background-image: url(../img/info_bg.jpg);
+background-repeat: fixed;
+background-size: 100% 100%;
+opacity: 0.8;
+background: cover;
+}
+div.info
+{
+position: relative;
+margin: 10% 5% 5% 5%;
+background-image:url(../img/woods1.jpg);
+background-repeat: repeat;
+background-size: contain;
+text-align: center;
+border-radius: 5%;
+border: 1pt #5d533d solid;
+}
+div.intro
+{
+text-align: left;
+margin: 5% 2% 2% 2%;
+padding:  5%;
+background-color: #F9DFA8;
+opacity: 0.8;
+border-radius: 5%;
+width: 45%;
+float: left;
+justify-content: space-around;
+}
+div.rev
+{
+margin: 2%;
+background-color: #654628;
+border-radius: 3%; /*要再調弧度*/
+text-align: left;
+}
+div.form_buttom
+{
+	text-align: right;
+}
+div.user_rev
+{
+
+padding-top:3%;
+text-align: left;
+display: flex;
+}
+img.user_pic
+{
+width: 15%;
+height: 15%;
+border-radius: 50%;
+border-color: #3d3d3d;
+border:1pt dotted;
+float: left;
+margin: 5% 10% 5% 15% ;
+}
+img.product_pic
+{
+width: 25%;
+height: 25%;
+border-radius: 50%;
+
+border:5pt  #ffffff solid;
+float: left;
+margin: 5% 5% 5% 5%;
+}
+.clearfix:after /*讓圖片浮動後不脫離背景*/
+{
+content:".";
+display: block;
+height: 0;
+clear:both;
+visibility: hidden;
+}
+p.intro
+{
+text-align: left;
+width: 50%;
+}
+
+hr
+{
+clear: left;
+}
+span.user_name
+{
+color: black;
+font-size: 16pt;
+padding: 5pt;
+margin: 5pt;
+}
+.rating{
+}
+.rating label{
+color: #9E9E9E;
+float: right;
+}
+.rating  label{
+padding: 5px;
+font-size: 24px;
+line-height: 1em;
+display: inline-block;
+/*content: "★";*/
+}
+.rating input:checked ~ label,/*從選到的元素到之後的元素都會變色*/
+.rating label:hover,/*滑鼠移過去時的元素會變色*/
+.rating label:hover ~label{/*滑鼠移過去時的元素到之後會變色(hover上的沒有)*/
+color:#FF9898;
+}
+.rating  input:checked ~ label:hover,/*選到的元素之後被hover的元素會半不透明*/
+.rating  input:checked  ~label:hover ~ label,/*從選到的元素 之後被hover的元素到底都會半不透明*/
+.rating  label:hover ~ input:checked ~ label/*若hover在前面沒被選到的元素，從選到的元素到底會持續半不透明*/
+{
+opacity: 0.5;
+}
+/*以上星等製作*/
+.rev_section_rate{
+display: flex;
+flex-direction: row;
+padding: 5px;
+font-size: 24px;
+line-height: 1em;
+}
+.textarea_rev
+{
+
+padding: 2%;
+width:35%;
+height: 100px;
+float: left;
+background-color: white;
+}

@@ -2,7 +2,7 @@
 body
 {
 background-image: url(../img/info_bg.jpg);
-
+font-family: "微軟正黑體";
 background-size: 100% 100%;
 opacity: 0.8;
 text-align: center;
@@ -11,7 +11,7 @@ text-align: center;
 div.type
 {
 position: relative;
-margin: -1% 5% 0% 5%;/*上 右 下 左*/
+margin: 10% 5% 5% 5%;/*上 右 下 左*/
 background-color:#F7DBAC;
 text-align: center;
 border: 1pt #5d533d solid;
@@ -19,15 +19,17 @@ border: 1pt #5d533d solid;
 /*商品種類選擇*/
 div.product_type
 {
+	font-size: 50pt;
+	color: white;
 	background-color: #303030;
-	width: auto;
+	
 }
 /*單類商品區塊*/
 div.one_product
 {
 padding:0% 0% 0% 0%;
 background-color: #765929;
-margin: 0% 10%;
+margin: 2% 10% 1% 10%;
 border-radius: 2%;
 width:auto;
 }

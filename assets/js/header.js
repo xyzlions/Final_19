@@ -1,4 +1,4 @@
-
+document.write("<script>");
 document.write("<head>" );
 document.write("<meta charset=\"UTF-8\">" );     
 document.write("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">" );    
@@ -20,7 +20,7 @@ document.write("<\/script>");
 document.write("</head>");
 document.write("<body>");
 document.write("<div class=\"pos-f-t fixed \">");  
-document.write("<nav class=\"navbar navbar-dark bg-dark \" >");      
+document.write("<nav class=\"navbar navbar-dark bg-dark \">");      
 document.write("<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarToggleExternalContent\">");        
 document.write("<span class=\"navbar-toggler-icon\"></span>");        
 document.write("</button>");        
@@ -35,9 +35,8 @@ document.write("<center><img src=\"assets/img/logo2.jpg\" alt=\"logo2\" class=\"
 document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >首頁</h4></a>");          
 document.write("<hr color=\"white\" width=\"100px\" size=\"20\">");          
 document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >商品選購</h4></a>");          
-document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >商品總覽</h4></a>");          
-document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >關於我們</h4></a>");          
-document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >成員介紹</h4></a>");          
+document.write("<a href=\"allproduct.html\"><h4 class=\"text-white mx-4\" >商品總覽</h4></a>");          
+document.write("<a href=\"about_me.html\"><h4 class=\"text-white mx-4\" >關於我們</h4></a>");                   
           
 document.write("</div>");        
 document.write("</div>");      

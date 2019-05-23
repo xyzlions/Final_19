@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>商品總覽</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/product_info.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+	</head>
+	<body>
+	<script src="assets/js/header.js"></script>
+	
+		<div class="info clearfix">
+			
+			<img src="assets/img/product_test.jpg" class="product_pic"><!--商品照片-->
+			<div class="intro"><!--商品介紹區-->
+				<h2>商品名稱</h2>
+				<p>
+				文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+				文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹
+				文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹文字介紹</p>
+				<button type="button">前往選購</button>
+			</div>
+			
+			<hr>
+			<!--評論區-->
+			<img src="assets/img/rev.png">
+			
+			<div class="rev clearfix">
+				<form action="" method="post">
+					<img class="user_pic" src="assets/img/member.png" alt="使用者大頭貼">
+					<div class="user_rev">
+						<span class="user_name">使用者名稱</span>
+						<div class="rating">
+							<!--星等區塊-->
+							<input type="radio" id="star5" name="rating" value="5" hidden />
+							<label for="star5">♥</label>
+							<input type="radio" id="star4" name="rating" value="4" hidden />
+							<label for="star4">♥</label>
+							<input type="radio" id="star3" name="rating" value="3" hidden />
+							<label for="star3">♥</label>
+							<input type="radio" id="star2" name="rating" value="2" hidden />
+							<label for="star2">♥</label>
+							<input type="radio" id="star1" name="rating" value="1" hidden />
+							<label for="star1">♥</label>
+						</div><div class="form_button">
+						<input type="submit" value="送出" />
+						<input type="reset" value="重填" />
+					</div>
+					</div>
+					<!--輸入評論-->
+					<textarea name="user_review" cols="50" rows="10" wrap="hard"></textarea>
+					
+				</form>
+				<hr>
+				<!--評論呈現-->
+				<img class="user_pic" src="assets/img/member.png" alt="使用者大頭貼">
+				<div class="user_rev">
+					<span class="user_name">使用者名稱</span>
+					<div class="rev_section_rate">
+						<!--下面是用js呈現星星-->
+						<!--但是需要看使用者之前輸入的star是顯示幾顆星-->
+						<script>
+							var num=0;
+							function Starat(num){//方法:num是幾，就會有幾顆星變色
+								for(var i=0;i<num;i++){
+									document.write("<span class='checked'>♥</span>");
+								}
+								for(var i=0;i<(5-num);i++){
+									document.write("<span>♥</span>");
+								}
+							}
+							num=4;//這是給四顆星的意思，只要改這裡就可以換
+							Starat(num);
+						</script>
+					</div>
+				</div>
+				<div class="textarea_rev">
+					<!--這裡要顯示使用者的評論-->
+					情豆初開情豆初開情豆初開情豆初開情豆初開
+					情豆初開情豆初開情豆初開情豆初開情豆初開
+					情豆初開情豆初開情豆初開情豆初開情豆初開
+					情豆初開情豆初開情豆初開情豆初開情豆初開
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
