@@ -1,4 +1,4 @@
-body
+body/**/
 {
 background-image: url(../img/info_bg.jpg);
 background-repeat: fixed;
@@ -6,6 +6,7 @@ background-size: 100% 100%;
 opacity: 0.8;
 background: cover;
 }
+/**/
 div.info
 {
 position: relative;
@@ -17,6 +18,7 @@ text-align: center;
 border-radius: 5%;
 border: 1pt #5d533d solid;
 }
+/**/
 div.intro
 {
 text-align: left;
@@ -29,6 +31,7 @@ width: 45%;
 float: left;
 justify-content: space-around;
 }
+/**/
 div.rev
 {
 margin: 2%;
@@ -36,10 +39,12 @@ background-color: #654628;
 border-radius: 3%; /*要再調弧度*/
 text-align: left;
 }
+/**/
 div.form_buttom
 {
 	text-align: right;
 }
+/**/
 div.user_rev
 {
 
@@ -47,6 +52,7 @@ padding-top:3%;
 text-align: left;
 display: flex;
 }
+/**/
 img.user_pic
 {
 width: 15%;
@@ -57,6 +63,7 @@ border:1pt dotted;
 float: left;
 margin: 5% 10% 5% 15% ;
 }
+/**/
 img.product_pic
 {
 width: 25%;
@@ -67,7 +74,8 @@ border:5pt  #ffffff solid;
 float: left;
 margin: 5% 5% 5% 5%;
 }
-.clearfix:after /*讓圖片浮動後不脫離背景*/
+/*讓圖片浮動後不脫離背景*/
+.clearfix:after 
 {
 content:".";
 display: block;
@@ -75,16 +83,18 @@ height: 0;
 clear:both;
 visibility: hidden;
 }
+/**/
 p.intro
 {
 text-align: left;
 width: 50%;
 }
-
+/**/
 hr
 {
 clear: left;
 }
+/**/
 span.user_name
 {
 color: black;
@@ -92,6 +102,7 @@ font-size: 16pt;
 padding: 5pt;
 margin: 5pt;
 }
+/**/
 .rating{
 }
 .rating label{

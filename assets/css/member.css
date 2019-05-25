@@ -1,0 +1,58 @@
+body/*背景*/
+{
+background-image: url(../img/cherry.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+font-family: "微軟正黑體";
+opacity: 0.8;
+text-align: center;
+}
+/*按鈕區*/
+div.memberbutton
+{
+background-color:black;
+padding: 3%;
+opacity: 0.8;
+text-align: center;
+margin: 0%;
+}
+/*圖片LOGO*/
+img.memberlogo
+{
+width: 25%;
+height: 25%;
+border-radius: 50%;
+border:1em  #FFC8B4 inset;
+margin: 5% 5% 0% 5%;
+}
+.clearfix:after /*讓圖片浮動後不脫離背景*/
+{
+content:".";
+display: block;
+height: 0;
+clear:both;
+visibility: hidden;
+}
+/*按鈕樣式*/
+.button {
+display: inline-block;
+padding: 15px 25px;
+margin: 0% 3% 0% 3%;
+font-size: 24px;
+cursor: pointer;
+text-align: center;
+text-decoration: none;
+outline: none;
+color: #fff;
+background-color: #FF8888;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #FFA488;
+}
+.button:hover {background-color:#FF5511}
+.button:active {
+color: #fff;
+background-color:#880000 ;
+box-shadow: 0 5px 	#A42D00;
+transform: translateY(4px);
+}
