@@ -28,7 +28,7 @@ width: 25%;
 height: 25%;
 border-radius: 50%;
 border:1em  #FFC8B4 inset;
-margin: 10% 10% 10% 10%;
+margin: 8% 10% 2% 10%;
 }
 .clearfix:after /*讓圖片浮動後不脫離背景*/
 {
