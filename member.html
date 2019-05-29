@@ -3,17 +3,161 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>會員中心</title>
-		<link rel="stylesheet" type="text/css" href="assets/css/member.css">
-	</head>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/member.css">
+		</head>
 <body>
-		<div class="clearfix"><!--圖片LOGO-->
+<script src="assets/js/header.js"></script>
+		<div class=" memberlogo clearfix">
 			<img src="assets/img/member.png" class="memberlogo" charset="UTF-8">
 		</div>
-		<h2 style="font-size: 36pt">會員中心</h2>
-		<div class="memberbutton clearfix"><!--按鈕區-->
-			<a href="change_file.html"><button class="button">修改資料</button></a>
-			<a href="order_list.html"><button class="button">訂單紀錄</button></a>
-			<a href="allproduct.html"><button class="button">評論紀錄</button></a>
+		<div class="memberbutton clearfix">
+			<button onclick="document.getElementById('change_file').style.display='block'"  class="button">修改資料</button>
+			<button onclick="document.getElementById('order_list').style.display='block'"  class="button">訂單紀錄</button>
+			<button onclick="document.getElementById('comment').style.display='block'"  class="button">評論紀錄</button>
 		</div>
+		<div id="change_file" class="modal">
+  
+  		<form class="modal-content animate" action="">
+    		<div class="imgcontainer">
+     		 <h2>修改資料</h2>
+    		</div>
+
+    		<div class="container">
+    			<label for="ue-mail">信箱帳號</label><br>
+    		<input type="text" value="123456789@mmmail.com" name="uname" disabled><br>
+      		<label for="uname">使用者名稱</label><br>
+      		<input type="text" placeholder="輸入使用者名稱" name="uname" required><br>
+			<label for="psw"><b>Password</b></label><br>
+      		<input type="password" placeholder="輸入密碼" name="psw" required><br>
+        	<label for="address"><b>地址</b></label><br>
+      		<input type="textarea" placeholder="輸入地址" name="address"><br>
+      		<label for="tel"><b>電話</b></label><br>
+      		<input type="tel" placeholder="輸入電話" name="tel"><br>
+      		<button type="submit" class="button">修改資料</button>
+      		<button type="button" onclick="document.getElementById('change_file').style.display='none'"  class="button">Cancel</button>
+   		 	</div>
+  		</form>
+		</div>
+		<div id="order_list" class="modal">
+  
+  		<div class="modal-content animate" action="">
+    		<div class="imgcontainer">
+     		 <h2>訂單紀錄</h2>
+    		</div>
+    		<div class="container" style="text-align:center">
+    			<table  class="list" >
+                            <thead >
+                                <tr>
+                                    <th scope="col" >訂單編號</th>
+                                    <th scope="col" >商品</th>
+                                    <th scope="col" >收件者</th>
+                                    <th scope="col" >價格</th>
+                                    <th scope="col" >付款方式</th>
+                                    <th scope="col" >電話</th>
+                                    <th scope="col" >取貨方式</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td >
+                                        00001001
+                                    </td>
+                                    <td >
+                                        <a href="allproduct.html">
+                                            豆花、湯品
+                                        </a>
+                                    </td>
+                                    <td >
+                                        花豆妹
+                                    </td>
+                                    <td >
+                                    	NT$&nbsp;100
+                                    </td>
+                                    <td >
+                                        card
+                                    </td>
+                                    <td>
+                                    	0988787878
+                                    </td>
+                                    <td>
+                                    	來店取貨
+                                    </td>
+                                </tr>
+                            </tbody>
+               	</table>
+                <button type="button" onclick="document.getElementById('order_list').style.display='none'"  class="button">Close</button>
+   		 	</div>
+  		</div>
+		</div>
+		<div id="comment" class="modal">
+  
+  		<div class="modal-content animate" action="">
+    		<div class="imgcontainer">
+     		 <h2>評論紀錄</h2>
+    		</div>
+    		<div class="container" style="text-align:center">
+    			<table  class="list" >
+                            <thead >
+                                <tr>
+                                    <th scope="col" >評論編號</th>
+                                    <th scope="col" >商品</th>
+                                    <th colspan="5" >評論內容</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td >
+                                        00001012
+                                    </td>
+                                    <td >
+                                        <a href="product_info.html">
+                                            手工豆花
+                                        </a>
+                                    </td>
+                                    <td colspan="5">
+                                        好吃好吃好吃
+                                    </td>
+                                </tr>
+                            </tbody>
+               	</table>
+                <button type="button" onclick="document.getElementById('comment').style.display='none'"  class="button">Close</button>
+   		 	</div>
+  		</div>
+		</div>
+<script>
+// Get the modal
+var modal = document.getElementById('change_file');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+// Get the modal
+var modal = document.getElementById('order_list');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+// Get the modal
+var modal = document.getElementById('comment');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
