@@ -1,0 +1,101 @@
+
+ 
+.collapsing {
+  width: 0;
+  transition-property: width;
+  white-space: nowrap;
+
+}
+.rounded-circle{
+	width:80px;
+	height:80px;
+}
+#navbarToggleExternalContent{
+  transform: translateX(-100%);
+  transition: transform .35s ease;
+  display: block;
+  height: 100%;
+  min-height: 100%;
+}
+#navbarToggleExternalContent.show{
+  transform: translateX(0%);
+}
+.navbar.navbar-dark.bg-dark{
+    background-size:cover;
+	background-repeat:no-repeat;
+}
+
+.navbar-dark.bg-dark{
+	background-color:#000000;
+}
+.slider_container 
+		{
+			margin: 3px auto;
+			width: 830px;
+			height: 480px;
+			position: absolute;
+			top: 30%;
+			left: 20%;
+			border: 15px solid; 
+			border-radius: 8px;   
+			border-bottom-width: 15px;
+			background-color:#fff0ac;
+			box-shadow: #666 0 0 5px;
+		}
+		.slider_container div 
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			filter: alpha(opacity=0);
+		}
+		.slider_container div 
+		{
+			-webkit-animation: round 20s linear infinite;
+			animation: round 20s linear infinite;
+		}
+		.carousel.carousel-item{
+			height:300px;
+			min-height:300px;
+			max-height:400px;
+			object-fit:cover;
+		}
+.d-block{
+	border:	#ffe4ca 10px solid ;
+	padding:10px;
+    border-radius:10px;
+}
+.col-8{
+	text-align:center;
+	padding:20px;
+    background-color:#ffe4ca;
+    font-weight:bold ;
+    font-size:50px;
+}
+
+#cherry{                  
+	position : fixed;
+	left: 0;
+	bottom: 10px;
+	opacity: 0.8;
+	z-index:-1;
+}
+#container{
+	padding:20px;
+	background-color:red;
+	margin:20px;
+	border:#ffd9ec 10px solid ;
+}
+/*熱門商品*/
+.pop{
+	border: 3px solid #000000;
+	padding:50px;
+	background-color:#FFE4CA;
+	border-radius:5px;
+	
+}
+.product{
+  border:8px solid #000000;
+  border-radius:5px;
+}

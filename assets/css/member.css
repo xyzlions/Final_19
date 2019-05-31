@@ -4,23 +4,22 @@ background-image: url(../img/cherry.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 font-family: "微軟正黑體";
-opacity: 0.8;
 text-align: center;
 }
 div.memberlogo
 {
 text-align: center;
+padding: 0% 3%;
 }
 div.memberbutton
 {
-	position:absolute;
+	position:relative;
 	bottom:0%;
 	width:100%;
-background-color:black;
+background-color:rgba(63,63,63,1);
 padding: 3%;
-opacity: 0.8;
 text-align: center;
-margin: 0%;
+margin: 1% 0% 0% 0%;
 }
 img.memberlogo
 {
@@ -40,9 +39,9 @@ visibility: hidden;
 }
 .button {
 display: inline-block;
-padding: 15px 25px;
-margin: 0% 3% 0% 3%;
-font-size: 24px;
+padding: 12px 23px;
+margin: 0% 1% 0% 1%;
+font-size: 20px;
 cursor: pointer;
 text-align: center;
 text-decoration: none;
@@ -51,7 +50,7 @@ color: #fff;
 background-color: #FF8888;
 border: none;
 border-radius: 15px;
-box-shadow: 0 9px #FFA488;
+box-shadow: 0 8px #FFA488;
 }
 .button:hover {background-color:#FF5511}
 .button:active {
@@ -60,7 +59,7 @@ background-color:#880000 ;
 box-shadow: 0 5px 	#A42D00;
 transform: translateY(4px);
 }
-input, input
+input.change_file
  {
   width: 30%;
   height:2%;
@@ -92,24 +91,24 @@ input, input
   padding: 16px;
   text-align:center;
 }
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+.mem_modal {
+  display: none; /* 隱藏 */
+  position: fixed; /* 固定 */
+  z-index: 1; /* 浮在上面 */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); /*設定透明度*/
   padding-top: 60px;
 }
-.modal-content {
+.mem_modal-content {
   background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  margin: 5% auto 15% auto; 
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%; 
+  background-color:rgba(255,255,255,0.8); 
 }
 .list
 {
@@ -121,4 +120,13 @@ input, input
 thead
 {
 	background-color:#FFE4E1;
+}
+h1
+{
+color:#880000;
+font-weight: bold;
+}
+label
+{
+font-weight: bold;
 }

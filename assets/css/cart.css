@@ -1,0 +1,95 @@
+/*模糊背景圖*/
+body
+{
+background-image: url(../img/info_bg.jpg);
+font-family: "微軟正黑體";
+background-size: 100% 100%;
+text-align: center;
+}
+.remove
+{
+  border:1pt #ff7575 solid;
+  background-color: white;
+  color:#ff7575;
+  border-radius: 50%;
+}
+.remove:hover
+{
+  border:1pt #ff7575 solid;
+  background-color: #ff7575;
+  color:#fff;
+  border-radius: 50%;
+}
+.check_out
+{
+  border:1pt #ff9797 solid;
+  background-color: white;
+  color:#ff9797;
+  margin: 1%;
+}
+.check_out:hover
+{
+  border:1pt #ff9797 solid;
+  background-color: #ff9797;
+  color:#fff;
+  margin: 1%;
+}
+input.check_out
+ {
+  width: 90%;
+  
+  padding: 5pt 5pt;
+  margin: 1%;
+  display: inline-block;
+  border: 1px solid #de4458;
+  box-sizing: border-box;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.container {
+  padding: 16px;
+  text-align:center;
+}
+.check_out_modal {
+  display: none; /* 隱藏 */
+  position: fixed; /* 固定 */
+  z-index: 1; /* 浮在上面 */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4); /*設定透明度*/
+  padding-top: 60px;
+}
+.check_out_modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+  background-color:#ffecec; 
+}
+label
+{
+  
+font-weight: bold;
+}
+.td_label,th
+{
+  background-color: #dd9797;
+}
+
+table
+{
+  text-align: center;
+  border: 1pt solid #ff9797;
+  width: 100%;
+}
+.total
+{
+  background-color: rgba(255,151,151,0.8);
+  border: 1pt solid #ff9797;
+}
