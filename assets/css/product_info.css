@@ -1,12 +1,11 @@
-body/**/
+body
 {
 background-image: url(../img/info_bg.jpg);
 background-repeat: fixed;
 background-size: 100% 100%;
-opacity: 0.8;
 background: cover;
+font-family:"微軟正黑體";
 }
-/**/
 div.info
 {
 position: relative;
@@ -18,20 +17,19 @@ text-align: center;
 border-radius: 5%;
 border: 1pt #5d533d solid;
 }
-/**/
 div.intro
 {
 text-align: left;
 margin: 5% 2% 2% 2%;
 padding:  5%;
-background-color: #F9DFA8;
-opacity: 0.8;
+background-color: #F9DFa8;
+
 border-radius: 5%;
-width: 45%;
+border:1em #654628 groove;
+width: 50%;
 float: left;
 justify-content: space-around;
 }
-/**/
 div.rev
 {
 margin: 2%;
@@ -39,12 +37,10 @@ background-color: #654628;
 border-radius: 3%; /*要再調弧度*/
 text-align: left;
 }
-/**/
 div.form_buttom
 {
-	text-align: right;
+	text-align: left;
 }
-/**/
 div.user_rev
 {
 
@@ -52,7 +48,6 @@ padding-top:3%;
 text-align: left;
 display: flex;
 }
-/**/
 img.user_pic
 {
 width: 15%;
@@ -63,19 +58,17 @@ border:1pt dotted;
 float: left;
 margin: 5% 10% 5% 15% ;
 }
-/**/
 img.product_pic
 {
-width: 25%;
-height: 25%;
-border-radius: 50%;
+width: 30%;
+height: 30%;
+border-radius: 5%;
 
 border:5pt  #ffffff solid;
 float: left;
 margin: 5% 5% 5% 5%;
 }
-/*讓圖片浮動後不脫離背景*/
-.clearfix:after 
+.clearfix:after /*讓圖片浮動後不脫離背景*/
 {
 content:".";
 display: block;
@@ -83,18 +76,17 @@ height: 0;
 clear:both;
 visibility: hidden;
 }
-/**/
-p.intro
+p
 {
-text-align: left;
-width: 50%;
+text-align: center;
+
+font-size:18pt;
 }
-/**/
+
 hr
 {
 clear: left;
 }
-/**/
 span.user_name
 {
 color: black;
@@ -102,8 +94,8 @@ font-size: 16pt;
 padding: 5pt;
 margin: 5pt;
 }
-/**/
 .rating{
+
 }
 .rating label{
 color: #9E9E9E;
@@ -111,36 +103,82 @@ float: right;
 }
 .rating  label{
 padding: 5px;
-font-size: 24px;
+font-size: 36px;
 line-height: 1em;
 display: inline-block;
-/*content: "★";*/
+/*評分符號*/
 }
-.rating input:checked ~ label,/*從選到的元素到之後的元素都會變色*/
-.rating label:hover,/*滑鼠移過去時的元素會變色*/
-.rating label:hover ~label{/*滑鼠移過去時的元素到之後會變色(hover上的沒有)*/
+.rating input:checked ~ label,/*從選到的元素開始，元素都會變色*/
+.rating label:hover,/*滑鼠移過去時的元素變色*/
+.rating label:hover ~label{/*滑鼠移過去時的元素到之後都會變色*/
 color:#FF9898;
 }
 .rating  input:checked ~ label:hover,/*選到的元素之後被hover的元素會半不透明*/
 .rating  input:checked  ~label:hover ~ label,/*從選到的元素 之後被hover的元素到底都會半不透明*/
 .rating  label:hover ~ input:checked ~ label/*若hover在前面沒被選到的元素，從選到的元素到底會持續半不透明*/
 {
-opacity: 0.5;
+opacity: 0.8;
 }
 /*以上星等製作*/
 .rev_section_rate{
 display: flex;
 flex-direction: row;
 padding: 5px;
-font-size: 24px;
+font-size: 36px;
 line-height: 1em;
+}
+.checked
+{
+	margin: 0% 8%;
+	color:#FF9898;
 }
 .textarea_rev
 {
 
 padding: 2%;
-width:35%;
-height: 100px;
+width:50%;
+height: 20%;
 float: left;
 background-color: white;
+}
+
+.input_textarea
+{
+	float: left;
+	width: 60%;
+	height: 5%;
+}
+.rev_button
+{
+	border: none;
+  padding: 1% 2%;
+  margin: 1%;
+  text-align: center;
+  text-decoration: none;
+	border-radius: 5%;
+	background-color: #ffb5b5;
+	display: inline-block;
+	border: 1pt solid #932D00;
+}
+.rev_button:hover 
+{
+	background-color:#ffdac8;
+	border:2pt solid #880000;
+}
+.go_out
+{
+	border: none;
+  padding: 2% 3%;
+  margin: 2% 3%;
+  text-align: center;
+  text-decoration: none;
+	border-radius: 5%;
+	border: 1pt solid #A42D00;
+	background-color: #ffb5b5;
+	display: inline-block;
+}
+.go_out:hover 
+{
+	background-color:#FF5511;
+	border:2pt solid #880000;
 }

@@ -17,15 +17,24 @@
 		<script src="assets/js/header.js"></script>
 	<!--頁首選單end-->
 	<!--種類分頁選單start-->
+	<div class="search" style="clear:center">
+			<form action="" method="get" class="search">
+			<input type="text" name="search" placeholder="搜尋search...">
+			<button type="submit">搜尋</button>
+			</form>
+				</div>
+		
 		<div class="w3-container">
-			<div class="type clearfix">
+		<div class="type clearfix">
 				<div class="product_type" >
 					<button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'bean_flower')">豆花</button>
 					<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'drink_soup')">單品</button>
 					<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'ice')">冰品</button>
 				</div>
 				
+
 				<div id="bean_flower" class="w3-container w3-border city">
+				
 					<!--豆花區--> 
 					<a href="allproduct.html"><img src="assets/img/bean_flower.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->

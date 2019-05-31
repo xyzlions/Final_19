@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="assets/css/allproduct.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/cart.css">
         <script src="assets/js/jquery-3.4.1.min.js"></script>
 </head>
 <body>
@@ -24,71 +24,72 @@
                 <div class="col-12 mb-3">
                     <h2 class="mb-3">購物車</h2>
                     <div class="table-responsive-sm table-middle">
-                        <table class="table table-bordered" style="background-color: white">
-                            <thead class="thead-dark">
+                        <table class="table table-bordered" style="background-color: white;border-color:#ff9797 ">
+                            <thead class="total">
                                 <tr>
-                                    <th scope="col" class="product-remove">&nbsp;</th>
-                                    <th scope="col" class="product-thumbnail">產品名稱</th>
+                                    
+                                    <th scope="col" class="product-thumbnail ">產品種類</th>
                                     <th scope="col" class="product-name">內容</th>
                                     <th scope="col" class="product-price">價格</th>
                                     <th scope="col" class="product-quantity">數量</th>
                                     <th scope="col" class="product-subtotal">總計</th>
+                                    <th scope="col" class="product-remove">移除</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="product-remove">
-                                        <a class="remove " data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
-                                    </td>
                                     <td class="product-thumbnail">
-                                        <a href="product.html">
+                                        
                                             豆花花花花花花
-                                        </a>
+                                        
                                     </td>
                                     <td class="product-name">
-                                        <a href="product.html">配料:紅豆、芋頭、珍珠<br>湯底:手炒黑糖</a>
+                                        配料:紅豆、芋頭、珍珠<br>湯底:手炒黑糖
                                     </td>
                                     <td class="product-price">NT$&nbsp;30</td>
                                     <td class="product-quantity">
                                         <input type="number" value="1">
                                     </td>
                                     <td class="product-subtotal">NT$&nbsp;30</td>
+                                    <td class="product-remove">
+                                        <button type="submit" class="remove">X</button>
+                                    </td>
                                 </tr>
                                <tr>
-                                    <td class="product-remove">
-                                        <a class="remove" data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
-                                    </td>
                                     <td class="product-thumbnail">
-                                        <a href="product.html">
+                                        
                                             豆花花花花花花
-                                        </a>
+                                        
                                     </td>
                                     <td class="product-name">
-                                        <a href="product.html">配料:紅豆、芋頭、珍珠<br>湯底:手炒黑糖</a>
+                                        配料:紅豆、芋頭、珍珠<br>湯底:手炒黑糖
                                     </td>
                                     <td class="product-price">NT$&nbsp;30</td>
                                     <td class="product-quantity">
                                         <input type="number" value="1">
                                     </td>
                                     <td class="product-subtotal">NT$&nbsp;30</td>
+                                    <td class="product-remove">
+                                        <button type="submit" class="remove">X</button>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="product-remove">
-                                        <a class="remove " data-toggle="tooltip" data-placement="top" title="是否確定要移除">X</a>
-                                    </td>
                                     <td class="product-thumbnail">
-                                        <a href="product.html">
+                                        
                                             豆花花花花花花
-                                        </a>
+                                        
                                     </td>
                                     <td class="product-name">
-                                        <a href="product.html">配料:紅豆、芋頭、珍珠<br>湯底:手炒黑糖</a>
+                                        配料:紅豆、芋頭、珍珠<br>湯底:手炒黑糖
                                     </td>
                                     <td class="product-price">NT$&nbsp;30</td>
                                     <td class="product-quantity">
                                         <input type="number" value="1">
                                     </td>
                                     <td class="product-subtotal">NT$&nbsp;30</td>
+                                    <td class="product-remove">
+                                        <button type="submit" class="remove">X</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -101,25 +102,21 @@
                     
                     <div class="table-responsive-sm">
                         <table class="table table-bordered" style="background-color: white">
-                        <thead class="thead-dark">
+                        <thead class="total">
                                 <tr>
                                     <th colspan="2">購物車總計</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>小計</td>
-                                    <td>NT$&nbsp;1500</td>
-                                </tr>
-                                <tr class="bg-info">
                                     <td>總計</td>
-                                    <td>NT$&nbsp;1500</td>
+                                    <td>NT$&nbsp;90</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="2">
-                                        <a href="checkout.html" class="btn btn-outline-info btn-lg float-right">前往結帳</a>
+                                        <button onclick="document.getElementById('check_out').style.display='block'"  class="check_out">確認結帳</button>
                                     </td>
                                 </tr>
                             </tfoot>
@@ -127,6 +124,61 @@
                     </div>
                 </div>
                 <!-- 產品統計/end -->
+                <div id="check_out" class="check_out_modal ">
+            <form class="check_out_modal-content animate" action="">
+            <div class="imgcontainer">
+             <h2 >結帳資訊</h2>
+            </div>
+
+            <div class="container">
+            <table>
+            <tr>
+            <td class="td_label"><label >收件人Recipient</label></td>
+            <td ><input  type="text" name="uname" placeholder="輸入收件人姓名" class="check_out" ></td>
+            </tr>
+            <tr>
+            <td class="td_label"><label >信箱 E-mail</label></td>
+            <td ><input type="email"  placeholder="輸入信箱" name="email" class="check_out"></td>
+            </tr>
+            <tr>
+            <td class="td_label"><label for="tel">電話 Tel/Phone</label></td>
+            <td ><input type="tel"  placeholder="輸入電話" name="tel" class="check_out"></td>
+            </tr>
+            <tr>
+            <td class="td_label"><label >取貨方式 Pick up</label></td>
+            <td ><input type="radio"   name="pick_up" id="store" required>來店取 &nbsp;<input type="radio" name="pick_up" id="sent" required>外送</td>
+            </tr>
+            <tr>
+            <td class="td_label"><label >付款方式 Payment</label></td>
+            <td ><input type="radio"   name="pay" id="card" required>刷卡 &nbsp;<input type="radio" name="pay" id="cash" required>現金</td>
+            </tr>
+            </table>
+            <div class="imgcontainer">
+             <h2 >訂單資訊</h2>
+            </div>
+            <table>
+            <tr>
+            <th>商品</th>
+            <th>總計</th>
+            </tr>
+            <tr>
+            <td>豆花</td>
+            <td>NT$ &nbsp;90</td>
+            </tr>
+            <tr>
+            <td>飲品</td>
+            <td>NT$&nbsp;25</td>
+            </tr>
+            <tr>
+            <td class="total">總計</td>
+            <td class="total">NT$&nbsp;115</td>
+            </tr>
+            </table>
+            <button type="submit" class="check_out">結帳</button>
+            <button type="button" onclick="document.getElementById('check_out').style.display='none'"  class="check_out">取消結帳</button>
+            </div>
+        </form>
+        </div>
             </div>
         </div>
     </section>
@@ -135,6 +187,15 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip({trigger: "click"});
         })
+
+        var modal = document.getElementById('check_out');
+
+        //點空白關閉
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        }
     </script>
 </body>
 </html>

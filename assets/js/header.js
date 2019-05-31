@@ -25,19 +25,20 @@ document.write("<button class=\"navbar-toggler\" type=\"button\" data-toggle=\"c
 document.write("<span class=\"navbar-toggler-icon\"></span>");        
 document.write("</button>");        
 document.write("<img src=\"assets/img/LOGO1.png\" alt=\"blossom\" width=\"200px\" height=\"80px\" align=\"right\">");        
-document.write("<h3 style=\"text-align:right; color:#FFFFFF; \"><img src=\"assets/img/blossom.png\" alt=\"\" style=\"width: 50px; margin-right:20px;\">瀏覽人數 : 10000<img src=\"assets/img/blossom.png\" alt=\"\" style=\"width: 50px; margin-left:20px;\">");        
-document.write("</h3>");        
+document.write("<h4 style=\"text-align:right; color:#FFFFFF; \"><img src=\"assets/img/blossom.png\" alt=\"\" style=\"width: 45px; margin-right:20px;\">瀏覽人數 : 10000<img src=\"assets/img/blossom.png\" alt=\"\" style=\"width: 45px; margin-left:20px;\">");        
+document.write("</h4>");        
 document.write("</nav>");      
 document.write("<div class=\"bg-dark collapse width position-fixed \" id=\"navbarToggleExternalContent\">");      
 document.write("<!-- https://stackoverflow.com/a/10055302/9265131 -->");        
 document.write("<div class=\"bg-dark py-4 \" >");        
-document.write("<center><img src=\"assets/img/logo2.jpg\" alt=\"logo2\" class=\"rounded-circle center-block \"></center><br>");          
+document.write("<center><img src=\"assets/img/logo2.jpg\" alt=\"logo2\" class=\"rounded-circle center-block \"></center><br>");
+document.write("<a href=\"member.html\"><h4 class=\"text-white mx-4\" >會員中心</h4></a>");           
 document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >首頁</h4></a>");          
 document.write("<hr color=\"white\" width=\"100px\" size=\"20\">");          
 document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >商品選購</h4></a>");          
 document.write("<a href=\"allproduct.html\"><h4 class=\"text-white mx-4\" >商品總覽</h4></a>");          
-document.write("<a href=\"about_me.html\"><h4 class=\"text-white mx-4\" >關於我們</h4></a>");                   
-          
+document.write("<a href=\"about_us.html\"><h4 class=\"text-white mx-4\" >關於我們</h4></a>");                   
+document.write("<a href=\"cart.html\"><i class=\'fas fa-cart-plus\' style=\"font-size:36px;\"></i></a>");         
 document.write("</div>");        
 document.write("</div>");      
 document.write(" </div>");   
