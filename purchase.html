@@ -23,12 +23,12 @@
 		<div class="w3-container">
 			<div class="type clearfix">
 				<div class="product_type" >
-					<button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'bean_flower')">豆花</button>
-					<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'drink_soup')">單品</button>
-					<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'ice')">冰品</button>
+					<button class="w3-bar-item w3-button tablink w3-red" onclick="openType(event,'bean_flower')">豆花</button>
+					<button class="w3-bar-item w3-button tablink" onclick="openType(event,'drink_soup')">單品</button>
+					<button class="w3-bar-item w3-button tablink" onclick="openType(event,'ice')">冰品</button>
 				</div><br>
 				
-				<div id="bean_flower" class="w3-container w3-border city">
+				<div id="bean_flower" class="w3-container w3-border Type">
 					<!--豆花區--> 
 					<a href="allproduct.html"><img src="assets/img/bean_flower.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
@@ -82,7 +82,7 @@
 				</div>
 			
 		
-				<div id="drink_soup" class="w3-container w3-border city" style="display:none">
+				<div id="drink_soup" class="w3-container w3-border Type" style="display:none">
 					<!--飲品-->
 					<a href="allproduct.html"><img src="assets/img/drink.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
@@ -125,7 +125,7 @@
 					</div>
 				</div>
 					<!--冰品區-->
-				<div id="ice" class="w3-container w3-border city" style="display:none">
+				<div id="ice" class="w3-container w3-border Type" style="display:none">
 					<a href="allproduct.html"><img src="assets/img/ice.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
 						<form> 
