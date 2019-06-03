@@ -38,6 +38,7 @@ div.search
 	right:0;
 	text-align: right;
 	margin:10% 35% 0% 35%;
+	box-shadow: 5px 5px 2px #888888;
 }
 /*種類標題圖片*/
 img.type
@@ -57,7 +58,7 @@ border:5pt  #ffffff solid;
   box-sizing: border-box;
 
 }
-form.search input {
+form.search input[type=text] {
   padding: 3% 1% 3% 1%;
   font-size: 17px;
   border: none;

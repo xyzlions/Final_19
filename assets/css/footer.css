@@ -1,0 +1,27 @@
+.footer{
+	background-color:#272727;
+	color:#ffffff;
+	padding:15px;
+	position: relative;
+	bottom: 0pt;
+	columns: 3;
+	column-rule: ridge 2pt #fff;
+	text-align:center;
+}
+.link
+{
+	position: relative;
+	left: 0;
+	margin:5%;
+	text-align:center;
+}
+.contact
+{
+	margin:5%;
+	text-align:center;
+}
+.logo
+{
+	margin: 5% 10% 5% 10%;
+	text-align:center;
+}

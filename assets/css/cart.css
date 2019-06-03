@@ -5,6 +5,7 @@ background-image: url(../img/info_bg.jpg);
 font-family: "微軟正黑體";
 background-size: 100% 100%;
 text-align: center;
+background-repeat: cover;
 }
 .remove
 {
@@ -32,7 +33,7 @@ text-align: center;
   border:1pt #ff9797 solid;
   background-color: #ff9797;
   color:#fff;
-  margin: 1%;
+  
 }
 input.check_out
  {
@@ -77,13 +78,26 @@ label
   
 font-weight: bold;
 }
-.td_label,th
+.td_label
 {
-  background-color: #dd9797;
+  background-color:   #ffb5b5;
+  color: #fff;
+   text-shadow: black 0.1em 0.1em 0.2em;
+}
+th
+{
+  background-color: #2f0000;
+  color: #fff;
+}
+h2
+{
+  color: #fff;
+  text-shadow: black 0.12em 0.12em 0.1em;
 }
 
 table
 {
+  vertical-align:middle;
   text-align: center;
   border: 1pt solid #ff9797;
   width: 100%;
