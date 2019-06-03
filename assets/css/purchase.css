@@ -1,10 +1,10 @@
 /*模糊背景圖*/
 body
 {
-background-image: url(../img/info_bg.jpg);
 font-family: "微軟正黑體";
 background-size: 100% 100%;
 text-align: center;
+background-image: url(../img/info_bg.jpg);
 }
 /*商品總覽*/
 div.type
@@ -44,4 +44,107 @@ width: 10%;
 height: 10%;
 border-radius: 15px;
 border:3px  #ffffff solid;
+}
+.pro_img{
+	margin: 2%;
+    width: 65%;
+    height: 50%;
+    border-radius: 15px;
+    border:3px  #ffffff solid;
+    position: relative;
+    top: 5px;
+}
+.pro_img:hover{
+	opacity:0.6;
+}
+
+
+.submit{
+  position:relative;
+  bottom:30px;
+  right:-20px;
+  padding:1px;
+  background-color:#000000;
+  font-size:18px;
+  border-radius:10px;
+  width:80px;
+  color:#ffffff;
+  font-family:微軟正黑體;
+  font-weight:bold;
+}
+/*test*/
+
+
+/*.a:checked~.pro::before{
+    border:3px  #000000 solid;
+    opacity:0.6;
+
+}*/
+input[type=checkbox]{
+	box-sizing:border-box;
+	position:relative;
+	top:5px;
+}
+input[type=radio]{
+	box-sizing:border-box;
+	position:relative;
+	top:5px;
+}
+label{
+	width:150px;
+	height:150px;
+	margin:10px;
+}
+/*加入購物車按鈕*/
+.add_cart{
+	position:relative;
+	left:-160px;
+	bottom:-40px;
+	background-color:#000000;
+	border-radius:10px;
+	font-size:15px;
+	width:90px;
+	font-family:微軟正黑體;
+    font-weight:bold;
+    color:#ffffff;
+    padding:1px;
+}
+
+/*數量增減按鈕*/
+*{
+	box-sizing:border-box;
+}
+.input-number{
+	width:150px;
+	padding:0 12px;
+	text-align:center;
+	outline:none;
+}
+.input-number,.input-number-decrement,
+.input-number-increment{
+	border:2px solid #ffffff;
+	height:40px;
+	user-select:none;
+}
+.input-number-decrement,.input-number-increment{
+	display:inline-block;
+	width:30px;
+	line-height:38px;
+	background:#000000;
+	color:#ffffff;
+	text-align:center;
+	font-weight:bold;
+	cursor:pointer;
+}
+.input-number-decrement:active,
+.input-number-increment:active{
+	background:#dddddd;
+}
+.input-number-decrement{
+	border-right:none;
+	border-radius:0px 0 0 0px;
+}
+.input-number-increment{
+    border-left:none;
+	border-radius:0 0px 0px 0;
 }
