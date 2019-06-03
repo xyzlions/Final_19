@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>會員中心</title>
+<head>
+<meta charset="UTF-8">
+<title>會員中心</title>
 		
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/member.css">
-		</head>
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+</head>
 <body>
-<script src="assets/js/header.js"></script>
+	<script src="assets/js/header.js"></script>
 		<div class=" memberlogo clearfix">
 
 			<img src="assets/img/member.png" class="memberlogo" charset="UTF-8">
@@ -21,6 +22,7 @@
 	
 		<div class="memberbutton clearfix">
 			<button onclick="document.getElementById('change_file').style.display='block'"  class="button">修改資料</button>
+			<a href="cart.html"><button class="button">購物車</button></a>
 			<button onclick="document.getElementById('order_list').style.display='block'"  class="button">訂單紀錄</button>
 			<button onclick="document.getElementById('comment').style.display='block'"  class="button">評論紀錄</button>
 		</div>
@@ -41,7 +43,7 @@
         	<label for="address">Address</label><br>
       		<input type="textarea"  placeholder="輸入地址" name="address" class="change_file"><br>
       		<label for="tel">Tel/Phone</label><br>
-      		<input type="tel"  placeholder="輸入電話" name="tel" class="change_file"><br>
+      		<input type="tel" onkeyup="value=value.replace(/[^\d]/g,'') "  placeholder="輸入電話" name="tel" class="change_file" Maxlength="10"><br>
       		<button type="submit" class="button">Change</button>
       		<button type="button" onclick="document.getElementById('change_file').style.display='none'"  class="button">Cancel</button>
    		 	</div>
@@ -134,5 +136,6 @@
   		</div>
 		</div>
 <script src="assets/js/memberbutton.js"></script>
+	<script src="assets/js/footer.js"></script>
 </body>
 </html>

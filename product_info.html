@@ -67,11 +67,11 @@
 			<div class="user_rev">
 					<span class="user_name">使用者名稱</span>
 					<div class="rev_section_rate">
-						<!--下面是用js呈現星星-->
-						<!--但是需要看使用者之前輸入的star是顯示幾顆星-->
+						<!--下面是用js呈現-->
+						<!--但是需要看使用者之前輸入的是顯示幾顆-->
 						<script>
 							var num=0;
-							function Heart_rate(num){//方法:num是幾，就會有幾顆星變色
+							function Heart_rate(num){//方法:num是幾，就會有多少變色
 								for(var i=0;i<num;i++){
 									document.write("<span class='checked'>♥</span>");
 								}
@@ -79,7 +79,7 @@
 									document.write("<span style='margin:0% 8%'>♥</span>");
 								}
 							}
-							num=3;//這是給四顆星的意思，只要改這裡就可以換
+							num=3;//這是給3的意思，只要改這裡就可以換
 							Heart_rate(num);
 						</script>
 					</div>
@@ -92,6 +92,7 @@
 					情豆初開情豆初開情豆初開情豆初開情豆初開
 			</div>
 		</div>
-		
+	</div>
+	<script src="assets/js/footer.js"></script>
 	</body>
 </html>

@@ -2,14 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>商品頁面</title>
+		<title>商品選購</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/allproduct.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/purchase.css">
 		<script src="assets/js/jquery-3.4.1.min.js"></script>
 	</head>
 	<body>
@@ -17,24 +17,15 @@
 		<script src="assets/js/header.js"></script>
 	<!--頁首選單end-->
 	<!--種類分頁選單start-->
-	<div class="search" style="clear:center">
-			<form action="" method="get" class="search">
-			<input type="text" name="search" placeholder="搜尋search...">
-			<button type="submit">搜尋</button>
-			</form>
-				</div>
-		
 		<div class="w3-container">
-		<div class="type clearfix">
+			<div class="type clearfix">
 				<div class="product_type" >
-					<button class="w3-bar-item w3-button tablink w3-red" onclick="openType(event,'bean_flower')">豆花</button>
-					<button class="w3-bar-item w3-button tablink" onclick="openType(event,'drink_soup')">單品</button>
-					<button class="w3-bar-item w3-button tablink" onclick="openType(event,'ice')">冰品</button>
-				</div>
+					<button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'bean_flower')">豆花</button>
+					<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'drink_soup')">單品</button>
+					<button class="w3-bar-item w3-button tablink" onclick="openCity(event,'ice')">冰品</button>
+				</div><br>
 				
-
-				<div id="bean_flower" class="w3-container w3-border Type">
-				
+				<div id="bean_flower" class="w3-container w3-border city">
 					<!--豆花區--> 
 					<a href="allproduct.html"><img src="assets/img/bean_flower.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
@@ -71,7 +62,7 @@
 				</div>
 			
 		
-				<div id="drink_soup" class="w3-container w3-border Type" style="display:none">
+				<div id="drink_soup" class="w3-container w3-border city" style="display:none">
 					<!--飲品-->
 					<a href="allproduct.html"><img src="assets/img/drink.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
@@ -89,7 +80,7 @@
 					</div>
 				</div>
 					<!--冰品區-->
-				<div id="ice" class="w3-container w3-border Type" style="display:none">
+				<div id="ice" class="w3-container w3-border city" style="display:none">
 					<a href="allproduct.html"><img src="assets/img/ice.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
 						<a href="product_info.html"><img src="assets/img/ice.jpg" class="product_pic"></a>
@@ -116,6 +107,6 @@
 		</div>
 <!--種類切換js-->
 <script src="assets/js/typechange.js"></script>
-<script src="assets/js/footer.js"></script>
+
 </body>
 </html>
