@@ -37,7 +37,7 @@ document.write("<center><img src=\"assets/img/logo2.jpg\" alt=\"logo2\" class=\"
 document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >首頁</h4></a>");          
 document.write("<hr color=\"white\" width=\"100px\" size=\"20\">");    
 document.write("<a href=\"member.html\"><h4 class=\"text-white mx-4\" >會員中心</h4></a>");      
-document.write("<a href=\"index.html\"><h4 class=\"text-white mx-4\" >商品選購</h4></a>");          
+document.write("<a href=\"purchase.html\"><h4 class=\"text-white mx-4\" >商品選購</h4></a>");          
 document.write("<a href=\"allproduct.html\"><h4 class=\"text-white mx-4\" >商品總覽</h4></a>");          
 document.write("<a href=\"about_us.html\"><h4 class=\"text-white mx-4\" >關於我們</h4></a>");                    
 document.write("<a href=\"cart.html\"><img src=\"assets/img/cart.png\" style=\"width:50px;\"></a>");         
