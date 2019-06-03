@@ -10,11 +10,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/purchase.css">
-		<script src="assets/js/jquery-3.4.1.min.js"></script>
-	</head>
-	<body>
-	<!--頁首選單start-->
+		<!--頁首選單start-->
 		<script src="assets/js/header.js"></script>
+		<!--商品js-->
+		<script src="assets/js/purchase.js"></script>
+	</head>
+	
+
+	<body>
 	<!--頁首選單end-->
 	<!--種類分頁選單start-->
 		<div class="w3-container">
@@ -29,34 +32,51 @@
 					<!--豆花區--> 
 					<a href="allproduct.html"><img src="assets/img/bean_flower.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
-						<a href="product_info.html"><img src="assets/img/flower_bean.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/buding.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/twobfb.jpg" class="product_pic"></a><!--商品照片-->
+						<form> 
+
+						<label for="a1"><div class="pro"><img src="assets/img/flower_bean.jpg" class="pro_img"> </div><input type="radio" id="a1" value="value1" name="bean" /> </label>
+						<label for="a2"><div  class="pro"><img src="assets/img/twobfb.jpg" class="pro_img"> </div><input type="radio" id="a2" value="value2" name="bean" /> </label>
+						<label for="a3"><div class="pro"><img src="assets/img/buding.jpg" class="pro_img"> </div><input type="radio" id="a3" value="value2" name="bean" /> </label>
+
+						<input type="submit" value="下一步" class="submit" href="#ingredient" onclick="">
+						</form>
+
 					</div>
 					<!--配料區-->
-					<a href="allproduct.html"><img src="assets/img/with.png" class="type"></a>
-					<div class="one_product"><!--商品選擇區-->
-						<a href="product_info.html"><img src="assets/img/green_bean.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/QQ.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/flower_born.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/god_grass.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/oneperson.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/pearl.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/red_bean.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/sweet_potato_circle.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/tang_yuan.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/taro.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/taro_circle.jpg" class="product_pic"></a>
+					<img id="ingredient" src="assets/img/with.png" class="type">
+					<div class="one_product" id="ingredient"><!--商品選擇區-->
+						<!-- 配料-->
+						<form>
+						<label for="a"><div class="pro"><img src="assets/img/green_bean.jpg" class="pro_img"> </div><input type="checkbox" id="a" checked value="value1" name="sample" onClick="onCheckBox(this);"/> </label>
+
+						<label for="b"><div class="pro"><img src="assets/img/flower_born.jpg" class="pro_img"> </div><input type="checkbox" id="b" value="value2" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="c"><div class="pro"><img src="assets/img/oneperson.jpg" class="pro_img"> </div><input type="checkbox" id="c" value="value3" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="d"><div class="pro"><img src="assets/img/pearl.jpg" class="pro_img"> </div><input type="checkbox" id="d" value="value4" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="e"><div class="pro"><img src="assets/img/QQ.jpg" class="pro_img"> </div><input type="checkbox" id="e" value="value5" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="f"><div class="pro"><img src="assets/img/red_bean.jpg" class="pro_img"> </div><input type="checkbox" class="f" value="value6" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="g"><div class="pro"><img src="assets/img/sweet_potato_circle.jpg" class="pro_img"> </div><input type="checkbox" id="g" value="value7" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="h"><div class="pro"><img src="assets/img/tang_yuan.jpg" class="pro_img"> </div><input type="checkbox" id="h" value="value8" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="i"><div class="pro"><img src="assets/img/taro.jpg" class="pro_img"> </div><input type="checkbox" id="i" value="value9" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="j"><div class="pro"><img src="assets/img/taro_circle.jpg" class="pro_img"> </div><input type="checkbox" id="j" value="value10" name="sample" onClick="onCheckBox(this);"/> </label>
+						<label for="k"><div class="pro"><img src="assets/img/god_grass.jpg" class="pro_img"> </div><input type="checkbox" id="k" value="value11" name="sample" onClick="onCheckBox(this);"/> </label>
+                        <input type="button" class="submit" class="submit_vote" name="submit_vote" value="下一步" onClick="onSubmitVote()" href="#shop" />
+                        </form>
+
 						<!--商品照片-->
 					</div>
 					<!--湯底區-->
 					<a href="allproduct.html"><img src="assets/img/soup.png" class="type"></a>
-					<div class="one_product"><!--商品選擇區-->
-						<a href="product_info.html"><img src="assets/img/blacksugar_fire.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/blacksugar_milk.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/strong_beanwater.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/nosugar_beanwater.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/milk_beanwater.jpg" class="product_pic"></a>
+					<div class="one_product" id="shop"><!--商品選擇區-->
+						<form> 
+
+						<label for="b1"><div><img src="assets/img/blacksugar_fire.jpg" class="pro_img"> </div><input type="radio" id="b1" value="value1" name="bean" />40元</label>
+						<label for="b2"><div><img src="assets/img/blacksugar_milk.jpg" class="pro_img"> </div><input type="radio" id="b2" value="value2" name="bean" />45元</label>
+						<label for="b3"><div><img src="assets/img/strong_beanwater.jpg" class="pro_img"> </div><input type="radio" id="b3" value="value3" name="bean" />45元</label>
+						<label for="b4"><div><img src="assets/img/nosugar_beanwater.jpg" class="pro_img"> </div><input type="radio" id="b4" value="value4" name="bean" />45元</label>
+						<label for="b5"><div><img src="assets/img/milk_beanwater.jpg" class="pro_img"> </div><input type="radio" id="b5" value="value5" name="bean" />50元</label>
+
+						<input type="submit" value="完成購買" class="submit" href="#ingredient" onclick="">
+						</form>
 						<!--商品照片-->
 					</div>
 				</div>
@@ -67,39 +87,73 @@
 					<a href="allproduct.html"><img src="assets/img/drink.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
 						<a href="product_info.html"><img src="assets/img/blacksugar_milk.jpg" class="product_pic"></a>
+						<span class="input-number-decrement">-</span>
+						<input class="input-number" type="text" value="1" min="0" max="100">
+						<span class="input-number-increment">+</span>
+						<input type="button" class="add_cart" value="加入購物車">
 						<a href="product_info.html"><img src="assets/img/strong_beanwater.jpg" class="product_pic"></a>
+						<span class="input-number-decrement">-</span>
+						<input class="input-number" type="text" value="1" min="0" max="100">
+						<span class="input-number-increment">+</span>
+						<input type="button" class="add_cart" value="加入購物車">
 						<a href="product_info.html"><img src="assets/img/nosugar_beanwater.jpg" class="product_pic"></a>
+						<span class="input-number-decrement">-</span>
+						<input class="input-number" type="text" value="1" min="0" max="100">
+						<span class="input-number-increment">+</span>
+						<input type="button" class="add_cart" value="加入購物車">
 						<a href="product_info.html"><img src="assets/img/milk_beanwater.jpg" class="product_pic"></a>
+						<span class="input-number-decrement">-</span>
+						<input class="input-number" type="text" value="1" min="0" max="100">
+						<span class="input-number-increment">+</span>
+						<input type="button" class="add_cart" value="加入購物車">
 						<!--商品照片-->
 					</div>
 					<!--湯品區-->
 					<a href="allproduct.html"><img src="assets/img/hotsoup.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
 						<a href="product_info.html"><img src="assets/img/redbean_milk.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/redbean_soup.jpg" class="product_pic"></a><!--商品照片-->
+						<span class="input-number-decrement">-</span>
+						<input class="input-number" type="text" value="1" min="0" max="100">
+						<span class="input-number-increment">+</span>
+						<input type="button" class="add_cart" value="加入購物車"> 
+						<a href="product_info.html"><img src="assets/img/redbean_soup.jpg" class="product_pic"></a>
+						<span class="input-number-decrement">-</span>
+						<input class="input-number" type="text" value="1" min="0" max="100">
+						<span class="input-number-increment">+</span>
+						<input type="button" class="add_cart" value="加入購物車"> 
+						<!--商品照片-->
 					</div>
 				</div>
 					<!--冰品區-->
 				<div id="ice" class="w3-container w3-border city" style="display:none">
 					<a href="allproduct.html"><img src="assets/img/ice.png" class="type"></a>
 					<div class="one_product"><!--商品選擇區-->
-						<a href="product_info.html"><img src="assets/img/ice.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/milk_ice.jpg" class="product_pic"></a><!--商品照片-->
+						<form> 
+						<label for="c1"><div class="pro"><img src="assets/img/ice.jpg" class="pro_img"> </div><input type="radio" id="c1" value="value1" name="bean" /> </label>
+						<label for="c2"><div  class="pro"><img src="assets/img/milk_ice.jpg" class="pro_img"> </div><input type="radio" id="c2" value="value2" name="bean" /> </label>
+
+						<input type="submit" value="下一步" class="submit" href="#ice_pro" onclick="">
+						</form>
+						<!--商品照片-->
 					</div>
 					<!--配料-->
 					<a href="allproduct.html"><img src="assets/img/with.png" class="type"></a>
-					<div class="one_product"><!--商品選擇區-->
-						<a href="product_info.html"><img src="assets/img/green_bean.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/QQ.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/flower_born.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/god_grass.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/oneperson.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/pearl.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/red_bean.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/sweet_potato_circle.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/tang_yuan.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/taro.jpg" class="product_pic"></a>
-						<a href="product_info.html"><img src="assets/img/taro_circle.jpg" class="product_pic"></a>
+					<div class="one_product" id="#ice_pro"><!--商品選擇區-->
+						<form>
+						<label for="d1"><div class="pro"><img src="assets/img/green_bean.jpg" class="pro_img"> </div><input type="checkbox" id="d1" checked value="value1" name="sample1" onClick="onCheckBox(this);"/> </label>
+
+						<label for="d2"><div class="pro"><img src="assets/img/flower_born.jpg" class="pro_img"> </div><input type="checkbox" id="d2" value="value2" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d3"><div class="pro"><img src="assets/img/oneperson.jpg" class="pro_img"> </div><input type="checkbox" id="d3" value="value3" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d4"><div class="pro"><img src="assets/img/pearl.jpg" class="pro_img"> </div><input type="checkbox" id="d4" value="value4" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d5"><div class="pro"><img src="assets/img/QQ.jpg" class="pro_img"> </div><input type="checkbox" id="d5" value="value5" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d6"><div class="pro"><img src="assets/img/red_bean.jpg" class="pro_img"> </div><input type="checkbox" id="d6" value="value6" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d7"><div class="pro"><img src="assets/img/sweet_potato_circle.jpg" class="pro_img"> </div><input type="checkbox" id="d7" value="value7" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d8"><div class="pro"><img src="assets/img/tang_yuan.jpg" class="pro_img"> </div><input type="checkbox" id="d8" value="value8" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d9"><div class="pro"><img src="assets/img/taro.jpg" class="pro_img"> </div><input type="checkbox" id="d9" value="value9" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d10"><div class="pro"><img src="assets/img/taro_circle.jpg" class="pro_img"> </div><input type="checkbox" id="d10" value="value10" name="sample1" onClick="onCheckBox(this);"/> </label>
+						<label for="d11"><div class="pro"><img src="assets/img/god_grass.jpg" class="pro_img"> </div><input type="checkbox" id="d11" value="value11" name="sample1" onClick="onCheckBox(this);"/> </label>
+                        <input type="button" class="submit" id="submit_vote1" name="submit_vote1" value="完成購買" onClick="onSubmitVote1()" />
+                        </form>
 						<!--商品照片-->
 					</div>
 				</div>
@@ -107,6 +161,10 @@
 		</div>
 <!--種類切換js-->
 <script src="assets/js/typechange.js"></script>
-
+<!--footer-->
+<script src="assets/js/footer.js"></script>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 </html>
